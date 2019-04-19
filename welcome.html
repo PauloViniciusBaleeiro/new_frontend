@@ -8,30 +8,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Icons import -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 <title>AlmoxData</title>
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">Javascript</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- NAV BAR MOBILE -->
+        <ul class="sidenav" id="mobile-demo">
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
             <li><a href="collapsible.html">Javascript</a></li>
             <li><a href="mobile.html">Mobile</a></li>
         </ul>
-    </div>
-</nav>
-
-<!-- NAV BAR MOBILE -->
-<ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
-</ul>
-
+    </header>
+    <main>
+        <section id="inicio">
+            <figure>
+                <img class="responsive-img" src="img/almoxarif.jpg" alt="Imagem conceitual de almoxarifado">
+            </figure>
+        </section>
+        <section id="destaques" class="container">
+            <div class="row">
+                <div class="col s12 l4 center hoverable servicos-link">
+                    <h4>Controle</h4>
+                    <i class="material-icons large">storage</i>
+                    <p class="flow-text">Obtenha controle sobre seus estoques de forma eficiente e segura com o auxílio de uma ferramenta acessível e moderna</p>
+                </div>
+                <div class="col s12 l4 center hoverable servicos-link">
+                    <h4>Segurança</h4>
+                    <i class="material-icons large">security</i>
+                    <p class="flow-text">Com a AlmoxData você tem controle de acesso as suas informações, com controle de usuários, setores e endereçamento</p>
+                </div>
+                <div class="col s12 l4 center hoverable servicos-link">
+                    <h4>Suporte Técnico</h4>
+                    <i class="material-icons large">group</i>
+                    <p class="flow-text"> A equipe de suporte técnico está disponível nos mais diversos canais para tirar suas dúvidas de utilização ou qualquer outra dificuldade</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
