@@ -1,0 +1,14 @@
+/* Primeira imagem */
+#inicio {
+    width: 100%;
+    height: calc(100% - 64px);
+}
+
+#inicio figure {
+    width: 100%;
+    margin: 0px;
+}
+
+#inicio figure img {
+    width: 200%;
+}
