@@ -25,3 +25,22 @@
     color: white;
     bottom: 5px;
 }
+
+.btn-small {
+    border-radius: 600px;
+    left: 250px;
+}
+.logar {
+    background-color: yellow;
+    color: rgb(94, 21, 94);
+    font-weight: 600;
+}
+
+.logotipo {
+    width: 64px;
+    height: 64px;
+}
+
+.nav-wrapper {
+    background-color: rgb(94, 21, 94);
+}
