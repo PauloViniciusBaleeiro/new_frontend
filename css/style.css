@@ -2,6 +2,9 @@
     font-family: SocialIcons;
     src: url('../fonts/Social-Circles_v1.1.otf');
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Primeira imagem */
 #inicio {
@@ -76,4 +79,9 @@
 
 .footer_itens {
 text-align: center;
+}
+
+.menu-link {
+    color: #1b5e20;
+    font-weight: 600;
 }
