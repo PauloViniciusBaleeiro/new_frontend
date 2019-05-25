@@ -9,38 +9,44 @@
     <!-- Icons import -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="./img/almoxdata_green.ico" type="image/x-icon">
 <title>AlmoxData</title>
 </head>
-<body>
+<body onload="setYear()">
     <header>
         <div class="navbar-fixed">
             <nav>
-                <div class="nav-wrapper">
-                    <img src="./img/logotipo.PNG" alt="AlmoxData" class="logotipo"> <a href="#!" class="brand-logo"></a>
+                <div class="nav-wrapper green accent-2">
+                    <img src="./img/logo_verde.png" alt="AlmoxData" class="brand-logo logotipo"> <a href="#!" class="brand-logo"></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#" class="waves-effect waves-light btn pulse logar">Logar</a></li>
-                        <li><a href="badges.html">Components</a></li>
-                        <li><a href="collapsible.html">Javascript</a></li>
-                        <li><a href="mobile.html">Mobile</a></li>
+                        <li><a href="#inicio" class="menu-link">Almoxarifado</a></li>
+                        <li><a href="#destaques" class="menu-link">Destaques</a></li>
+                        <li><a href="#contato" class="menu-link">Contatos</a></li>
+                        <li><a href="#redes_sociais" class="menu-link">Redes Sociais</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
         <!-- NAV BAR MOBILE -->
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+        <ul class="sidenav green accent-1" id="mobile-demo">
+                <li><a href="#" class="waves-effect waves-light btn pulse logar">Logar</a></li>
+                <li><a href="#inicio">Almoxarifado</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#contato">Contatos</a></li>
+                <li><a href="#redes_sociais">Redes Sociais</a></li>
         </ul>
     </header>
     <main>
+        <!-- INÍCIO DA PRIMEIRA SESSÃO CONTENDO A IMAGEM  -->
         <section id="inicio">
             <figure>
                 <img class="responsive-img" src="img/almoxarif.jpg" alt="Imagem conceitual de almoxarifado">
             </figure>
-        </section>
+        </section >
+        <!-- FIM DA SESSÃO SESSÃO CONTENDO A IMAGEM -->
+        <!-- INÍCIO DA SEGUNDA SESSÃO -->
         <section id="destaques" class="container">
             <div class="row">
                 <div class="col s12 l4 center hoverable servicos-link">
@@ -60,6 +66,8 @@
                 </div>
             </div>
         </section>
+        <!-- FIM DA SEGUNDA SESSÃO -->
+        <!-- INÍCIO DA SESSÃO FALE CONOSCO -->
         <section id="contato" class="container">
             <div>
                 <h2 class="center">Fale Conosco</h2>
@@ -67,49 +75,85 @@
             </div>
             <div class="row">
                 <br>
-                <div class="box">
-                    <div id="diretos" class="col s12 l4 ">
+                <div>
+                    <div id="diretos" class="col s12 l12 ">
                         <strong>Telefone:</strong> +55(15) 99999-9999<br>
                         <strong>E-mail:</strong> contato@almoxdata.com.br<br>
                         <strong>Site:</strong> almoxdata.heroku.com
                     </div>
-                    <div class="card col s12 l8 ">
+                </div>
+                <div class="row">
+                    <div class="card col s12 l12 hoverable">
                         <div class="card-image">
-                            <img src="img/contato.jpg" alt="">
-                            <span class="card-title"> Contato</span>
+                            <img src="./img/imagen_contato.png" alt="">
                         </div>
                         <div class="card-content">
                             <form action="submit">
                                 <div class="row input-field">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input name="nome" type="text" class="validated">
-                                    <label for="nome">Seu Nome</label>
+                                    <input name="nome" id="nome" type="text" class="validated">
+                                    <label onclick="clickFocus('nome')" for="nome">Seu Nome</label>
                                 </div>
                                 <div class="row input-field">
                                     <i class="material-icons prefix">contacts</i>
-                                    <input name="empresa" type="text" class="validated">
-                                    <label for="empresa">Nome Empresa</label>
+                                    <input name="empresa" id="empresa" type="text" class="validated">
+                                    <label onclick="clickFocus('empresa')" for="empresa">Sua Empresa</label>
+                                </div>
+                                <div class="row input-field">
+                                    <i class="material-icons prefix">contact_mail</i>
+                                    <input name="email" id="email" type="email" class="validated">
+                                    <label onclick="clickFocus('email')" for="email">Seu E-mail</label>
+                                    <span class="helper-text" data-error="inválido" data-success="válido"></span>
                                 </div>
                                 <div class="row input-field">
                                     <i class="material-icons prefix">contact_phone</i>
-                                    <input name="telefone" type="tel" class="validated">
-                                    <label for="telefone">Seu Telefone</label>
+                                    <input name="telefone" id="telefone" type="tel" class="validated">
+                                    <label for="telefone" onclick="clickFocus('telefone')">Seu Telefone</label>
                                 </div>
                                 <div class="row input-field">
                                     <i class="material-icons prefix">mode_edit</i>
-                                    <textarea name="mensagem" type="tel" class="materialize-textarea"></textarea>
-                                    <label for="mensagem">Deixe-nos uma mensagem</label>
+                                    <textarea name="mensagem" id="mensagem" type="tel" class="materialize-textarea"></textarea>
+                                    <label for="mensagem" onclick="clickFocus('mensagem')"> Deixe-nos uma mensagem</label>
                                 </div>
-                                <div class="row">
-                                    <a class="waves-effect waves-light btn-small"><i class="material-icons right">send</i>enviar</a>
+                                <div class="row input-field botao">
+                                    <a class="waves-effect waves-light btn green darken-2"><i class="material-icons right">send</i>enviar</a>
                                 </div>
                             </form>
                         </div>                                                    
                     </div>
-                 </div>
+                </div>
         </section>
+        <!-- FIM DA SESSÃO FALE CONOSCO -->
         
     </main>
+    <footer class="page-footer green darken-2" id="redes_sociais">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m7">
+                    <p class="footer_itens"><img src="./img/logo_verde.png" alt="AlmoxData logo"></p>
+                    <p>A plataforma definitiva de controle de estoque, disponível a qualquer hora e em qualquer lugar!</p>
+                </div>
+                <div class="col s12 m5 footer_itens">
+                    <br><br><br>
+                    <h4>Nossas Redes Sociais</h4>
+                    <ul class="icons-list">
+                        <li><a href="">g</a></li>
+                        <li><a href="">f</a></li>
+                        <li><a href="">i</a></li>
+                        <li><a href="">t</a></li>
+                        <li><a href="">y</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyrigth green darken-3">
+            <div class="container">
+                <p id="copyrigth">© </p>
+                <p><a href="#">versão 1.0.0</a></p>
+            </div>
+        </div>
+
+    </footer>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

@@ -1,3 +1,8 @@
+@font-face{
+    font-family: SocialIcons;
+    src: url('../fonts/Social-Circles_v1.1.otf');
+}
+
 /* Primeira imagem */
 #inicio {
     width: 100%;
@@ -17,22 +22,22 @@
     float: left;
 }
 
-.card .card-image img {
-    top: 10px;
+.card .card-image {
+    height: 280px;
 }
 .card .card-image .card-title {
     font-weight: 600;
-    color: white;
+    color: rgb(94, 21, 94);
     bottom: 5px;
 }
 
-.btn-small {
+.btn{
     border-radius: 600px;
-    left: 250px;
+    background-color: rgb(94, 21, 94)
 }
 .logar {
     background-color: yellow;
-    color: rgb(94, 21, 94);
+    color: #1b5e20;
     font-weight: 600;
 }
 
@@ -40,7 +45,35 @@
     width: 64px;
     height: 64px;
 }
+.servicos-link:hover{
+    color:#1b5e20;
+    cursor: pointer;
+}
 
-.nav-wrapper {
-    background-color: rgb(94, 21, 94);
+.botao {
+    text-align: center;
+    color: rgb(94, 21, 94);
+}
+
+.icons-list li{
+    display: inline;
+}
+
+.icons-list li a{
+    font-family: SocialIcons;
+    font-size: 64px;
+    color: aliceblue;
+}
+
+.icons-list li a:hover{
+    color: black;
+}
+
+.footer-copyrigth p {
+    text-align: center;
+    font-weight: 700;
+}
+
+.footer_itens {
+text-align: center;
 }
